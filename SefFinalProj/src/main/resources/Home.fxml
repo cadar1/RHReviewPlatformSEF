@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.28762541806020064" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #88AED0;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="169.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/imgonline-com-ua-Negative-hoLNVV9lCIsG19W.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="451.0" style="-fx-background-color: fdfd96;">
+         <children>
+            <Label layoutX="158.0" layoutY="34.0" prefHeight="50.0" prefWidth="119.0" text="Welcome!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="32.0" layoutY="334.0" mnemonicParsing="false" onAction="#restaurantsButton" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #0000fe;" text="Restaurants" textFill="#bebe42">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="81.0" layoutY="34.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/logosmall.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="234.0" layoutY="334.0" mnemonicParsing="false" onAction="#hotelsButton" prefHeight="50.0" prefWidth="169.0" style="-fx-background-color: #0000fe;" text="Hotels" textFill="#bebe42">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Line endX="-94.0" endY="101.0" layoutX="311.0" layoutY="297.0" startX="-94.0" startY="-213.0" />
+            <ImageView fitHeight="232.0" fitWidth="211.0" layoutX="3.0" layoutY="99.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/download.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="232.0" fitWidth="205.0" layoutX="219.0" layoutY="99.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/hotelstock.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

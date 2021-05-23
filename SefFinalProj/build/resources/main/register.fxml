@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegiserController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="228.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/imgonline-com-ua-Negative-hoLNVV9lCIsG19W.jpg" />
+         </image></ImageView>
+      <AnchorPane layoutX="228.0" prefHeight="400.0" prefWidth="292.0" style="-fx-background-color: #88AED0;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="152.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/shiled.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="122.0" prefHeight="23.0" prefWidth="69.0" text="Full Name:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="189.0" prefHeight="23.0" prefWidth="69.0" text="Username:">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ChoiceBox fx:id="role" layoutX="15.0" layoutY="301.0" prefWidth="150.0" />
+            <TextField fx:id="name" layoutX="90.0" layoutY="121.0" />
+            <TextField fx:id="username" layoutX="90.0" layoutY="188.0" />
+            <PasswordField fx:id="password" layoutX="90.0" layoutY="254.0" />
+            <Label layoutX="14.0" layoutY="255.0" prefHeight="23.0" prefWidth="69.0" text="Password:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="done" layoutX="239.0" layoutY="301.0" mnemonicParsing="false" onAction="#doneButton" text="Done" />
+            <Label fx:id="errorMessage" alignment="CENTER" layoutX="21.0" layoutY="356.0" prefHeight="25.0" prefWidth="177.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
