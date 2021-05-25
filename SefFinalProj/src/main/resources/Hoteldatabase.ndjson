@@ -1,0 +1,3 @@
+{"Address":"Str. Abc","Wi-Fi":true,"Stars":"4*","Parking":true,"City":"Timisoara","Name":"Hotel Abcd","PriceRange":"$$","Pets":false,"Phone":"0777777777","Country":"Romania","Pool":true,"Gym":true,"Room-Service":false}
+{"Address":"champs elysees","Wi-Fi":true,"Stars":"5*","Parking":true,"City":"Paris","Name":"Hilton","PriceRange":"$$$","Pets":false,"Phone":"0700000000","Country":"France","Pool":true,"Gym":true,"Room-Service":true,"Next event:":"44444"}
+{"Address":"1234 Blvd","Wi-Fi":true,"Stars":"5*","Parking":true,"City":"Las Vegas","Name":"Trump","PriceRange":"$$$","Pets":true,"Phone":"001303759463","Country":"USA","Pool":true,"Gym":true,"Room-Service":true,"Next event:":"Pool Party"}
