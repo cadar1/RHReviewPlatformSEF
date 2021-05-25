@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fdfd96;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CustomerReviewHController">
+    <children>
+        <ImageView fitHeight="275.0" fitWidth="200.0" layoutX="399.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/hotelstock.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="98.0" layoutY="32.0" prefHeight="41.0" prefWidth="217.0" text="Please Rate Your Experience" underline="true">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="127.0" fitWidth="200.0" layoutX="399.0" layoutY="273.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/hotel.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="restaurantName" layoutX="116.0" layoutY="97.0" />
+        <Label layoutX="2.0" layoutY="97.0" prefHeight="25.0" prefWidth="113.0" text="Restaurant Name:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Slider fx:id="rate" blockIncrement="1.0" layoutX="115.0" layoutY="316.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="1" prefHeight="41.0" prefWidth="206.0" showTickLabels="true" snapToTicks="true" />
+        <Label layoutX="36.0" layoutY="138.0" prefHeight="25.0" prefWidth="79.0" text="Date of Visit:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="dayText" layoutX="51.0" layoutY="188.0" prefHeight="25.0" prefWidth="49.0" />
+        <Label layoutX="22.0" layoutY="188.0" prefHeight="25.0" prefWidth="28.0" text="Day:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="monthText" layoutX="51.0" layoutY="230.0" prefHeight="25.0" prefWidth="49.0" />
+        <Label layoutX="2.0" layoutY="230.0" prefHeight="25.0" prefWidth="49.0" text="Month:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="yearText" layoutX="51.0" layoutY="273.0" prefHeight="25.0" prefWidth="49.0" />
+        <Label layoutX="18.0" layoutY="273.0" prefHeight="25.0" prefWidth="36.0" text="Year:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="108.0" layoutY="349.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/starr.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="155.0" layoutY="349.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/starr.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="204.0" layoutY="349.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/starr.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="251.0" layoutY="349.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/starr.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="301.0" layoutY="349.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/starr.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="329.0" layoutY="361.0" mnemonicParsing="false" onAction="#updateDatabase" text="Done" />
+        <ImageView fitHeight="78.0" fitWidth="98.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/mariostar.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="78.0" fitWidth="98.0" layoutX="315.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/mariostar.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="errorLabel" layoutX="107.0" layoutY="298.0" prefHeight="25.0" prefWidth="288.0" textFill="#ff3a3a">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        <TextArea fx:id="reviewBox" layoutX="132.0" layoutY="187.0" prefHeight="111.0" prefWidth="251.0" promptText="Please Write Your Review Here" />
+      <TextField fx:id="nightsText" layoutX="265.0" layoutY="144.0" prefHeight="25.0" prefWidth="49.0" promptText="Nights" />
+      <Label layoutX="199.0" layoutY="144.0" prefHeight="25.0" prefWidth="58.0" text="Duration:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
