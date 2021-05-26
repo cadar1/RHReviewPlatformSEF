@@ -88,13 +88,14 @@ public class LoginController {
                 String objRole = (String) obj.get("Role");
                 String objUsername = (String) obj.get("Username");
                 String objPassword = (String) obj.get("Password");
+                //objPassword = encodePassword(objUsername,objPassword);
                 String encodedPass = encodePassword(usernameTextField.getText(), enterpasswordField.getText());
-
+                //String encodedPass = enterpasswordField.getText();
                 if (usernameTextField.getText().equals(objUsername)) {
                     flag = true;
                     System.out.println(encodedPass);
                     System.out.println(objPassword);
-                    System.out.println(encodedPass.compareTo(objPassword));
+                    System.out.println(encodedPass.equals(objPassword));
                     //if username is found and pass correct
                     if (encodedPass.equals(objPassword)) {
                         loginMessageLabel.setText("Success!");
