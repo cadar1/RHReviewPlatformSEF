@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controllers.HMHomeController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fdfd95;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HMHomeController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="399.0" layoutX="201.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/hotelstock.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="-100.0" endY="399.0" layoutX="301.0" layoutY="1.0" startX="-100.0" />
+      <Button layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#computeRating" prefHeight="25.0" prefWidth="176.0" text="Check Rating" />
+      <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" onAction="#addHotelOnAction" prefHeight="25.0" prefWidth="176.0" text="Add Hotel" />
+      <Button layoutX="14.0" layoutY="302.0" mnemonicParsing="false" onAction="#manageHotelOnAction" prefHeight="25.0" prefWidth="176.0" text="Manage Hotel" />
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="176.0" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+      <Label fx:id="ratingsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="8.0" prefHeight="25.0" prefWidth="176.0" textFill="#0612ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ratingBox" layoutX="14.0" layoutY="39.0" prefHeight="25.0" prefWidth="176.0" promptText="For which Hotel" />
+   </children>
 </AnchorPane>

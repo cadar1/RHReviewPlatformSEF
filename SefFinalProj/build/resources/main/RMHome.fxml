@@ -3,20 +3,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RMHomeController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: fdfd96;">
          <children>
-            <Button layoutX="39.0" layoutY="63.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Add Restaurant" />
-            <Button layoutX="39.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button" />
-            <Button layoutX="39.0" layoutY="235.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Button" />
+            <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" onAction="#computeRating" prefHeight="25.0" prefWidth="143.0" text="Check Rating" />
+            <Button layoutX="16.0" layoutY="243.0" mnemonicParsing="false" onAction="#addRestaurant" prefHeight="25.0" prefWidth="143.0" text="Add Restaurant" />
+            <Button layoutX="16.0" layoutY="323.0" mnemonicParsing="false" onAction="#manageRestaurant" prefHeight="25.0" prefWidth="143.0" text="Manage Restaurant" />
+            <Button layoutY="372.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+            <Label layoutX="16.0" layoutY="6.0" prefHeight="17.0" prefWidth="143.0" />
+            <Label fx:id="ratingLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="23.0" prefHeight="25.0" prefWidth="143.0" textFill="#2a06dd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ratingText" layoutX="16.0" layoutY="58.0" prefHeight="25.0" prefWidth="143.0" promptText="For which restaurant" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
             <ImageView fitHeight="398.0" fitWidth="417.0" pickOnBounds="true">
                <image>
-                  <Image url="@Images/hotelstock.jpg" />
+                  <Image url="@Images/download.jpg" />
                </image>
             </ImageView>
          </children></AnchorPane>
