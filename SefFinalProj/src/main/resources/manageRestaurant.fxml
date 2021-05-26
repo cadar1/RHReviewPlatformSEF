@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fdfd96;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ManageRestaurantController">
+    <children>
+        <ImageView fitHeight="408.0" fitWidth="400.0" layoutX="200.0" pickOnBounds="true">
+            <image>
+                <Image url="@Images/download.jpg" />
+            </image>
+        </ImageView>
+        <Line endX="-100.0" endY="407.0" layoutX="300.0" layoutY="1.0" startX="-100.0" />
+        <Button layoutX="33.0" layoutY="297.0" mnemonicParsing="false" onAction="#changeEvent" prefHeight="25.0" prefWidth="132.0" text="Change Popular Dish" />
+        <Button layoutX="36.0" layoutY="57.0" mnemonicParsing="false" onAction="#deleteHotel" prefWidth="125.0" text="Delete Restaurant" />
+        <Button layoutX="13.0" layoutY="370.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="46.0" text="Back" />
+        <Label layoutX="13.0" layoutY="159.0" prefHeight="19.0" prefWidth="195.0" text="If you want to change your most" />
+        <Label layoutX="13.0" layoutY="178.0" prefHeight="25.0" prefWidth="195.0" text="popular dish please enter:" />
+        <TextField fx:id="namehotel" layoutX="24.0" layoutY="215.0" promptText="Restaurant Name" />
+        <TextField fx:id="eventnext" layoutX="24.0" layoutY="256.0" promptText=" Popular Dish Name" />
+        <TextField fx:id="deleteThis" layoutX="24.0" layoutY="20.0" promptText="Restaurant Name" />
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="76.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/food.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
