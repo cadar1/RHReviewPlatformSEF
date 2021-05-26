@@ -13,7 +13,7 @@ public class HomeController {
     private Button hotelsButton;
 
     public void hotelsButton(ActionEvent event) throws IOException {
-        Main.getInstance().changeSceneBig("/BrowseRestaurants.fxml", "Restaurants Page");
+        Main.getInstance().changeSceneBig("/BrowseHotels.fxml", "Restaurants Page");
 
     }
     public void restaurantsButton(ActionEvent event) throws IOException {
